@@ -38,7 +38,7 @@ async function run(){
             const query={_id:ObjectId(id)}
             //console.log('trying to delete',id)
             const result=await reviewCollection.deleteOne(query)
-            console.log(result)
+            // console.log(result)
             res.send(result)
 
         }) 
@@ -78,7 +78,7 @@ async function run(){
         })
     }
     finally{
-        console.log('inside finaly');
+        // console.log('inside finaly');
 
     }
 }
